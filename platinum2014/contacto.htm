@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dise&ntilde;o Gr&aacute;fico - By Platinum High Class</title>
+<style>
+	@font-face
+	{
+	font-family: girlys;
+	src: url('fonts/girls_are_weird.ttf');
+	}
+	
+	span.anothertext{
+		font-family:tx_love;
+		font-size: 40px;
+		line-height: 35px;
+	}
+	body{
+		background:url(img/fondo_contacto.jpg) #eabced;
+		color:#fff;
+	}
+	#main{
+		width:960px;
+		height:768px;
+		margin:15px auto;
+	}
+	#main{
+		background:url(img/contacto.jpg) top no-repeat;
+		/*border:2px solid #000;*/
+	}
+	
+	
+	
+	img.titulo{
+		position:relative;
+		top:10px;
+		left:150px;
+	}
+	img.instrucciones{
+		position:relative;
+		top:30px;
+		left:100px;
+		float:left;
+	}
+	/*p.descripcion{
+		position: relative;
+		top: 50px;
+		left: 470px;
+		width: 400px;
+	}*/
+	#main,img,p,#formulario{
+		display:none;
+	}
+	
+	#formulario{
+		position:relative;
+		top:70px;
+		left:170px;
+		float:left;
+	}
+	#formulario div.item_form{
+		display:block;
+		margin-top:10px;
+		margin-bottom:15px;
+	}
+	#formulario div.comentario_form{
+		position: relative;
+		top: -290px;
+		left: 330px;
+		width: 280px;
+		height: 200px;
+		text-align:center;
+	}
+	#formulario div.boton_form{
+		position: relative;
+		top: -270px;
+		left: 400px;
+		width: 160px;
+		height: 35px;
+		text-align:center;
+	}
+	#formulario div.comentario_form textarea{
+		width:100%;
+		height:80%;
+		background:#ff3aa4;
+		border:#000 2px solid;
+		font-family:girlys;
+		font-size: 20px;
+		font-weight:bold;
+		padding-left:5px;
+		color:#FFF;
+	}
+	input[type="text"]{
+		background:#ff3aa4;
+		border:#000 2px solid;
+		font-family:girlys;
+		font-size: 20px;
+		padding-left:5px;
+		width:200px;
+		color:#FFF;
+		font-weight:bold;
+	}
+	.etiqueta{
+		display:block;
+		font-family:girlys;
+		font-size: 25px;
+		color:#000;
+		font-weight:bold;
+	}
+	input[type="submit"]{
+		background: #a11158; /* Old browsers */
+background: -moz-linear-gradient(top,  #a11158 1%, #fe2498 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#a11158), color-stop(100%,#fe2498)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a11158 1%,#fe2498 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a11158 1%,#fe2498 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a11158 1%,#fe2498 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a11158 1%,#fe2498 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a11158', endColorstr='#fe2498',GradientType=0 ); /* IE6-9 */
+
+		border:#000 2px solid;
+		width:100%;
+		height:100%;
+		font-family:girlys;
+		font-size: 20px;
+		font-weight:bold;
+	}
+	input[type="submit"]:hover{
+		background: #fe2498; /* Old browsers */
+background: -moz-linear-gradient(top,  #fe2498 0%, #a11158 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe2498), color-stop(99%,#a11158)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fe2498 0%,#a11158 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fe2498 0%,#a11158 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fe2498 0%,#a11158 99%); /* IE10+ */
+background: linear-gradient(to bottom,  #fe2498 0%,#a11158 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe2498', endColorstr='#a11158',GradientType=0 ); /* IE6-9 */
+		color:#fff;
+		cursor:pointer;
+	}
+
+</style>
+<link href="css/css_reset.css" rel="stylesheet" type="text/css">
+<!--JQUERY EFFECTS-->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script type="text/javascript">
+	 $(document).ready(function(){
+	  //CODIGO AQUI
+	  $("#main" ).show("fade","slow");
+	  $( "img" ).show( "slide", 1500 );
+	  $( "#formulario" ).show( "explode", 1500 );
+	  //$( "p" ).show( "clip", 3500 );
+	 });  
+ </script>
+
+</head>
+
+<body>
+	<div id="main">
+    	<img src="img/contacto_instrucciones.jpg" class="instrucciones">
+    	<img src="img/contacto_titulo.png" class="titulo">
+        <div id="formulario">
+        	<form action="mailing.php" method="post" target="_blank">
+            	<div class="item_form">
+                	<label for="nombre" class="etiqueta">Nombre:</label>
+                    <input name="nombre" type="text">
+                </div>
+                <div class="item_form">
+                	<label for="telefono" class="etiqueta">Teléfono:</label>
+                    <input name="telefono" type="text">
+                </div>
+                <div class="item_form">
+                	<label for="celular" class="etiqueta">Celular:</label>
+                    <input name="celular" type="text">
+                </div>
+                <div class="item_form">
+                	<label for="email" class="etiqueta">E-Mail:</label>
+                    <input name="email" type="text">
+                </div>
+                <div class="item_form">
+                	<label for="servicios" class="etiqueta">Servicio o Producto:</label>
+                    <input name="servicios" type="text">
+                </div>
+                <div class="comentario_form">
+                	<label for="comentarios" class="etiqueta">Comentarios</label>
+                	<textarea name="comentarios" cols="" rows=""></textarea>
+                </div>
+                <div class="boton_form">
+                	<input name="btnenviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        
+    </div>
+<div>
+<center>
+   	<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="250" height="150">
+    	  <param name="movie" value="secciones_regresar.swf">
+    	  <param name="quality" value="high">
+    	  <param name="wmode" value="transparent">
+    	  <param name="swfversion" value="8.0.35.0">
+    	  <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+    	  <param name="expressinstall" value="Scripts/expressInstall.swf">
+    	  <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+    	  <!--[if !IE]>-->
+    	  <object type="application/x-shockwave-flash" data="secciones_regresar.swf" width="250" height="150">
+    	    <!--<![endif]-->
+    	    <param name="quality" value="high">
+    	    <param name="wmode" value="transparent">
+    	    <param name="swfversion" value="8.0.35.0">
+    	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+    	    <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+    	    <div>
+    	      <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+    	      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+  	      </div>
+    	    <!--[if !IE]>-->
+  	    </object>
+    	  <!--<![endif]-->
+  </object>
+  </center>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>

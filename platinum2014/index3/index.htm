@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pink and Black Friday by Platinum High Class</title>
+<style>
+	body{
+		background:url(fondo.jpg) #000 center;
+		color:#FFF;
+	}
+	#main{
+		width:960px;
+		height:768px;
+		margin:15px auto;
+	}
+	img{
+		position:absolute;
+		/*display:none;*/
+		-webkit-transition: all 5s ease;
+		-moz-transition: all 5s ease;
+		-ms-transition: all 5s ease;
+		-o-transition: all 5s ease;
+		transition: all 5s ease;
+		opacity:0;
+	}
+	.titulo{
+		left:50%;
+		margin-left:-306px;
+		z-index:10;
+	}
+	.heart_01,.heart_02,.heart_03,.heart_04,.heart_05{
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-ms-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;
+	}
+	.heart_01{
+		margin-left:25px;
+		margin-top:0;/*350px;*/
+		z-index:5;
+	}
+	.heart_02{
+		margin-left: 30px;
+		margin-top: 0;/*280px;*/
+		z-index:4;
+	}
+	.heart_03{
+		margin-left: 35px;
+		margin-top: 0;/*220px;*/
+		z-index:3;
+	}
+	.heart_04{
+		margin-left: 45px;
+		margin-top: 0;/*165px;*/
+		z-index:2;
+	}
+	.heart_05{
+		margin-left: 60px;
+		margin-top: 0;/*130px;*/
+		z-index:1;
+	}
+	.descuentos{
+		margin-top: 0;/*470px;*/
+		margin-left: 30px;
+		z-index: 5;
+	}
+	.fechas{
+		margin-left: 760px;
+		margin-top: 270px;
+		z-index: 9;
+		opacity:1;
+		display:none;
+	}
+	.aro{
+		margin-top:75px;
+		margin-left:-250px;
+		left:50%;
+		z-index:8;
+	}
+	.central{
+		margin-top:80px;
+		margin-left:-262px;
+		left:50%;
+		z-index:9;
+		-webkit-transition: all 10s ease;
+		-moz-transition: all 10s ease;
+		-ms-transition: all 10s ease;
+		-o-transition: all 10s ease;
+		transition: all 10s ease;
+	}
+	.footer{
+		margin-top:635px;
+		margin-left:-350px;
+		left:50%;
+		z-index:10;
+	}
+	.rotation{
+		-webkit-transform: rotate(760deg);
+		-moz-transform: rotate(760deg);
+		-o-transform: rotate(760deg);
+		-ms-transform: rotate(760deg);
+		transform: rotate(760deg);
+	}
+	.entrar{
+		display:block;
+		position:absolute;
+		width:115px;
+		height:99px;
+		background:url(items_11.png) no-repeat center;
+		opacity:0;
+		-webkit-transition: all 3s ease;
+		-moz-transition: all 3s ease;
+		-ms-transition: all 3s ease;
+		-o-transition: all 3s ease;
+		transition: all 3s ease;
+		z-index:10;
+		margin-left: 420px;
+	}
+	.entrar:hover{
+		opacity:1;
+	}
+	#slider{
+		width:960px;
+		height:768px;
+		margin:15px auto;
+	}
+
+</style>
+<link href="css/css_reset.css" rel="stylesheet" type="text/css">
+
+<!--JQUERY EFFECTS-->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	  //CODIGO AQUI
+	  $("#main" ).show("slide","slow");
+	  $( ".titulo" ).animate({opacity:1},"fast");
+	  $( ".aro" ).addClass("rotation").animate({opacity:1},"fast");
+	  $( ".central" ).addClass("rotation").animate({opacity:1},"fast");
+	  $( ".heart_01" ).animate({opacity:1,marginTop:350},"fast");
+	  $( ".heart_02" ).animate({opacity:1,marginTop:280},"fast");
+	  $( ".heart_03" ).animate({opacity:1,marginTop:220},"fast");
+	  $( ".heart_04" ).animate({opacity:1,marginTop:165},"fast");
+	  $( ".heart_05" ).animate({opacity:1,marginTop:130},"fast");
+	  $( ".fechas" ).show( "explode", 1000);
+	  $( ".footer" ).animate({opacity:1},"fast");
+	  $( ".descuentos" ).animate({opacity:1,marginTop:470},"fast");
+	  $( ".entrar" ).animate({opacity:1,marginTop:570},"fast").delay(5000).animate({opacity:1,marginLeft:800,marginTop:450},"fast").delay(200).animate({opacity:0.8});
+	 });  
+</script>
+
+</head>
+
+<body>
+	<div id="main">
+    	<img src="items_08.png" class="titulo">
+        <img src="items_02.png" class="heart_01">
+        <img src="items_03.png" class="heart_02">
+        <img src="items_04.png" class="heart_03">
+        <img src="items_05.png" class="heart_04">
+        <img src="items_06.png" class="heart_05">
+        <img src="items_12.png" class="descuentos">
+        <img src="items_07.png" class="aro">
+        <img src="items_01.png" class="central">
+        <img src="items_09.png" class="fechas">
+        <img src="items_10.png" class="footer">
+        <a href="http://platinumhighclass.mx/platinum2014/menu_principal.htm" class="entrar"></a>
+    	
+    </div>
+    <div id="slider">
+    	<iframe src="slider.htm" width="980" height="780" scrolling="no" frameborder="0">
+        </iframe>
+    </div>
+</body>
+</html>

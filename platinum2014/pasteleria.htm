@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mesa de Postres/Dulces/Botanas - By Platinum High Class</title>
+<style>
+	
+	p.descripcion{
+		font-family:Calibri;
+		font-size: 18px;
+	}
+	body{
+		background: #fe2498; /* Old browsers */
+background: -moz-linear-gradient(top,  #fe2498 0%, #a11158 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe2498), color-stop(100%,#a11158)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fe2498 0%,#a11158 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fe2498 0%,#a11158 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fe2498 0%,#a11158 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fe2498 0%,#a11158 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe2498', endColorstr='#a11158',GradientType=0 ); /* IE6-9 */
+		
+		color:#f36fc6;
+	}
+	#main{
+		width:960px;
+		height:768px;
+		margin:15px auto;
+		border:4px solid #000;
+	}
+	#main{
+		background:url(img/pasteleria.jpg) top no-repeat;
+	}
+	
+	img.titulo{
+		position:relative;
+		top: 40px;
+		left: 5px;
+		float:left;
+	}
+	p.descripcion{
+		position: relative;
+		top: 270px;
+		left: 110px;
+		width: 290px;
+		float: left;
+	}
+	#main,p,img{
+		display:none;
+	}
+
+</style>
+<link href="css/css_reset.css" rel="stylesheet" type="text/css">
+<!--JQUERY EFFECTS-->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script type="text/javascript">
+	 $(document).ready(function(){
+	  //CODIGO AQUI
+	  $("#main" ).show("slide","slow");
+	  $( "img" ).show( "scale", 1000 );
+	  $( "p" ).show( "drop", 1500 );
+	 });  
+ </script>
+
+</head>
+
+<body>
+	<div id="main">
+    	<img src="img/pasteleria_titulo_opt.png" class="titulo">
+        <p class="descripcion">
+        	La empresa cuenta con una gran 
+variedad de Pasteles, Cupcakes, 
+Cakepops, Galletas decoradas 
+totalmente alusivas en diseños 
+súper exclusivos para tu despedida 
+de soltera.
+<br>
+Pastelería y repostería temática  
+Sex and the city party, playboy parties, 
+Lingerie parties,  tiffany parties  
+diva partiies, high heel parties 
+Oh la la Paris 
+
+
+        </p>
+    </div>
+<div>
+<center>
+   	<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="250" height="150">
+    	  <param name="movie" value="secciones_regresar.swf">
+    	  <param name="quality" value="high">
+    	  <param name="wmode" value="transparent">
+    	  <param name="swfversion" value="8.0.35.0">
+    	  <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+    	  <param name="expressinstall" value="Scripts/expressInstall.swf">
+    	  <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+    	  <!--[if !IE]>-->
+    	  <object type="application/x-shockwave-flash" data="secciones_regresar.swf" width="250" height="150">
+    	    <!--<![endif]-->
+    	    <param name="quality" value="high">
+    	    <param name="wmode" value="transparent">
+    	    <param name="swfversion" value="8.0.35.0">
+    	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+    	    <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+    	    <div>
+    	      <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+    	      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+  	      </div>
+    	    <!--[if !IE]>-->
+  	    </object>
+    	  <!--<![endif]-->
+  </object>
+  </center>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>

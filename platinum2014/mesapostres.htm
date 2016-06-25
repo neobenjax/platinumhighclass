@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mesa de Postres/Dulces/Botanas - By Platinum High Class</title>
+<style>
+	@font-face
+	{
+	font-family: girlys;
+	src: url('fonts/girls_are_weird.ttf');
+	}
+	p.descripcion{
+		font-family:girlys;
+		font-size: 28px;
+	}
+	body{
+		background:#f72292;
+		color:#000;
+	}
+	#main{
+		width:960px;
+		height:768px;
+		margin:15px auto;
+	}
+	#main{
+		background:url(img/mesapostres.jpg) top no-repeat;
+	}
+	
+	img.titulo{
+		position:relative;
+		top: 140px;
+		left: 75px;
+		float:left;
+	}
+	p.descripcion{
+		position: relative;
+		top: 55px;
+		left: 160px;
+		width: 260px;
+		float: left;
+	}
+	#main,p,img{
+		display:none;
+	}
+
+</style>
+<link href="css/css_reset.css" rel="stylesheet" type="text/css">
+<!--JQUERY EFFECTS-->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script type="text/javascript">
+	 $(document).ready(function(){
+	  //CODIGO AQUI
+	  $("#main" ).show("explode","slow");
+	  $( "img" ).show( "puff", 1000 );
+	  $( "p" ).show( "fold", 1500 );
+	 });  
+ </script>
+
+</head>
+
+<body>
+	<div id="main">
+    	<img src="img/mesapostres_center_opt.png" class="titulo">
+        <p class="descripcion">
+        	La empresa cuenta con 
+lo mas original  para tu Mesa de Postres o Mesa de Dulces y botanas
+Le daremos un toque especial brindando el diseño y la decoración que necesites en base a tu fiesta temática contando con varias diseñadoras graficas  para lo cual personalizaremos toda tu mesa  con nombres fechas evento etc. 
+Contamos con una línea exclusiva de pasteles, Mini pasteles, cupcakes, cakepops,  tartas, alfajores, petite feurs,  fresas cubiertas con chocolate  y podemos combinar tu mesa con algo dulce y salado totalmente a tu elección 
+
+<br>
+<br>
+Si deseas alguna cotización solicítala y te brindaremos las opciones con las que contamos.
+
+        </p>
+    </div>
+<div>
+<center>
+   	<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="250" height="150">
+    	  <param name="movie" value="secciones_regresar.swf">
+    	  <param name="quality" value="high">
+    	  <param name="wmode" value="transparent">
+    	  <param name="swfversion" value="8.0.35.0">
+    	  <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+    	  <param name="expressinstall" value="Scripts/expressInstall.swf">
+    	  <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+    	  <!--[if !IE]>-->
+    	  <object type="application/x-shockwave-flash" data="secciones_regresar.swf" width="250" height="150">
+    	    <!--<![endif]-->
+    	    <param name="quality" value="high">
+    	    <param name="wmode" value="transparent">
+    	    <param name="swfversion" value="8.0.35.0">
+    	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+    	    <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+    	    <div>
+    	      <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+    	      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+  	      </div>
+    	    <!--[if !IE]>-->
+  	    </object>
+    	  <!--<![endif]-->
+  </object>
+  </center>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>

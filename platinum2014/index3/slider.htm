@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Rhinoslider 1.05</title>
+		<link type="text/css" rel="stylesheet" href="css/rhinoslider-1.05.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script type="text/javascript" src="js/rhinoslider-1.05.min.js"></script>
+		<script type="text/javascript" src="js/mousewheel.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#slider').rhinoslider({
+					effect: 'explode',
+					easing: 'easeInQuad',
+					autoPlay: true,
+					pauseOnHover: false
+				});
+			});
+		</script>
+		<style type="text/css">
+			body { /*background-color:#000;*/ }
+			
+			#slider {
+				width:960px;
+				height:720px;
+				
+				/*IE bugfix*/
+				padding:0;
+				margin:0;
+			}
+			
+			#slider li { list-style:none; }
+			
+			#page {
+				width:960px;
+				margin:50px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<ul id="slider">
+				<li><img src="slides/slider_01.jpg" alt="" /></li>
+				<li><img src="slides/slider_02.jpg" alt="" /></li>
+				<li><img src="slides/slider_03.jpg" alt="" /></li>
+				<li><img src="slides/slider_04.jpg" alt="" /></li>
+				<li><img src="slides/slider_05.jpg" alt="" /></li>
+                <li><img src="slides/slider_06.jpg" alt="" /></li>
+                <li><img src="slides/slider_07.jpg" alt="" /></li>
+                <li><img src="slides/slider_08.jpg" alt="" /></li>
+                <li><img src="slides/slider_09.jpg" alt="" /></li>
+                <li><img src="slides/slider_10.jpg" alt="" /></li>
+                <li><img src="slides/slider_11.jpg" alt="" /></li>
+                <li><img src="slides/slider_12.jpg" alt="" /></li>
+                <li><img src="slides/slider_13.jpg" alt="" /></li>
+                <li><img src="slides/slider_14.jpg" alt="" /></li>
+                <li><img src="slides/slider_15.jpg" alt="" /></li>
+                <li><img src="slides/slider_16.jpg" alt="" /></li>
+                <li><img src="slides/slider_17.jpg" alt="" /></li>
+                <li><img src="slides/slider_18.jpg" alt="" /></li>
+                <li><img src="slides/slider_19.jpg" alt="" /></li>
+                <li><img src="slides/slider_20.jpg" alt="" /></li>
+			</ul>
+		</div>
+	</body>
+</html>

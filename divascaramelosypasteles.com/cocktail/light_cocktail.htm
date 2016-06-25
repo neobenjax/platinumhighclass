@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro Cocktail</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+<script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="booklet/jquery.booklet.1.2.0.min.js" type="text/javascript"></script>
+<link href="booklet/jquery.booklet.1.2.0.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+<!--[if lte IE 6]>
+	<script src="DD_belatedPNG.js" type="text/javascript"></script>
+	<script type="text/javascript">  
+		DD_belatedPNG.fix(".b-shadow-f, .b-shadow-b, .b-p0, .b-p3, .b-arrow-next div, .b-arrow-prev div");  
+	</script>  
+<![endif]--> 
+<script type="text/javascript">
+	$(function() {
+		$('#mybook').booklet({
+			arrows: true,
+			arrowsHide: true,
+			width:  960,
+        	height: 768,
+			closed: true,
+			autoCenter: true,
+			covers: true
+		});
+    });
+    </script>
+
+<link type="text/css" href="formato.css" rel="stylesheet" media="screen" />
+</head>
+
+<body background="fondo.jpg">
+<div id="instrucciones">Hojea las páginas y revisa nuestras propuestas!
+<br />Usa las flechas izq/der en tu teclado
+</div>
+<div id="mybook">
+	<div class="b-load">
+		<div> 
+        	<img src="paginas/pagina_01.jpg" id="hojas" />
+			
+		</div>
+		<div>
+        	<img src="paginas/pagina_02.jpg" id="hojas" />
+			
+		</div>
+		<div>
+			<img src="paginas/pagina_03.jpg" id="hojas" />
+			
+		</div>
+        <div>
+			<img src="paginas/pagina_04.jpg" id="hojas" />
+			
+		</div>
+        <div>
+			<img src="paginas/pagina_05.jpg" id="hojas" />
+			
+		</div>
+        <div>
+			<img src="paginas/pagina_06.jpg" id="hojas" />
+			
+		</div>
+        <div>
+			<img src="paginas/pagina_07.jpg" id="hojas" />
+            <div id="descripcionregistro">
+            Si eres de las primeras 300 novias que se registre
+Antes de  OCTUBRE 31, 2011   tu acceso a nuestro cocktail sera GRATIS y si vas acompañada el acceso a tu acompañante/s sera de un costo de m.n. $150.00 si registras en tus datos su nombre o nombres
+            </div> 
+            <form action="cocktail.php" method="post" name="form1" target="_blank" id="form1">
+            	<div id="camposformulario" style="top:290px; left:80px;">
+                	Nombre de la novia
+                    <input type="text" name="nombre" id="nombre" style="width: 150px; height: 20px; background-color:transparent; color:#FFF;"/>
+                </div>
+                <div id="camposformulario" style="top:340px; left:80px;">
+                	Fecha de la boda
+                    <input type="text" name="fecha" id="fecha" style="width: 150px; height: 20px; background-color:transparent; color:#FFF;"/>
+                </div>
+                <div id="camposformulario" style="top:380px; left:80px;">
+                	Telefono/Celular
+                    <input type="text" name="telefono" id="telefono" style="width: 150px; height: 20px; background-color:transparent; color:#FFF;"/>
+                </div>
+                <div id="camposformulario" style="top:420px; left:80px;">
+                	Correo electronico
+                    <input type="text" name="email" id="email" style="width: 150px; height: 20px; background-color:transparent; color:#FFF;"/>
+                </div>
+                <div id="camposformulario" style="top:450px; left:80px;">
+                	Numero invitados
+                    <input type="text" name="invitados" id="invitados" style="width: 150px; height: 20px; background-color:transparent; color:#FFF;"/>
+                </div>
+                <div id="camposformulario" style="top:340px; left:390px;">                	
+                	<img src="enviar.png" onclick="form1.submit();" height="100" />                    
+                </div>
+                
+			</form>                     
+
+		</div>
+        <div>
+			<img src="paginas/pagina_08.jpg" id="hojas" />
+            <div id="camposformulario" style="top:680px; left:300px;">
+                	<img src="entrar.png" onclick="window.open('../light_index2.htm','_self');" />
+            </div>
+			
+		</div>
+
+	</div>
+</div>
+
+
+
+</body>
+</html>

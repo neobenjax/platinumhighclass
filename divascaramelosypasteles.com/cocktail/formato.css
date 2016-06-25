@@ -1,0 +1,33 @@
+#instrucciones{
+	background:#000;
+	color:#F6C;
+	text-align:center;
+	padding: 10px 1px;
+	border-style:dotted;
+	border-radius:15px;
+	width:600px;
+	height:50px;
+	position: absolute;
+	top:25px;
+	left:50%;
+	margin-left:-300px;
+}
+#hojas{
+	position:absolute;z-index:101; left:-9px; top:-5px; height:773px; width:500px;
+}
+#camposformulario{
+	position:absolute;z-index:150; color:#F9C;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#descripcionregistro{
+	top:170px; left:120px;
+	position:absolute;z-index:150; color:#F9C;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:9px;
+	text-align:center;
+	width:255px;
+}
+#entrar{
+	position:absolute;z-index:150;
+	top:340px; left:390px;
+}

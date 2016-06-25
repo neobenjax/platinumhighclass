@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background:#fe5da3 url(fondo.jpg); background-attachment:fixed;}
+input{ color:#FFF; font-family:Calibri; font-size:14px; font-weight:bold; padding-left:5px; border:solid #000 5px; border-radius:15px;}
+select{ background-color:#d91965; color:#FFF; font-family:Calibri; font-size:14px; font-weight:bold; padding-left:5px; border:solid #000 5px; border-radius:15px;}
+
+#contenido{width:1024px; min-height:1000px; position:absolute; left:50%; top:0; margin-left:-512px;}
+
+#contenido #logo{ background:url(images/fondo_logo.png) no-repeat; position:absolute; top:5px; left:50%; width:400px; height:248px; margin-left:-200px;}
+
+#contenido #logo_servicios{ background:url(images/fondo_logo.png) no-repeat; position:absolute; top:705px; left:50%; width:400px; height:248px; margin-left:-200px;}
+
+#contenido #logo_servicios_adicionales{ background:url(images/fondo_logo.png) no-repeat; position:absolute; top:1400px; left:50%; width:400px; height:248px; margin-left:-200px;}
+
+#contenido #logo_alimentosbebidas{ background:url(images/fondo_logo.png) no-repeat; position:absolute; top:2050px; left:50%; width:400px; height:248px; margin-left:-200px;}
+
+#contenido #logo_mesaregalos{ background:url(images/fondo_logo.png) no-repeat; position:absolute; top:2850px; left:50%; width:400px; height:248px; margin-left:-200px;}
+
+#contenido #corazon{ background:url(images/corazon.png) no-repeat; position:absolute; top:3300px; right:270px;; width:300px; height:278px;}
+
+.enviar{ 
+	background:url(images/enviar.png);
+	position:fixed;
+	right:5px;
+	bottom:10px;
+	cursor:pointer;
+	width:200px;
+	height:185px;
+	border:none;
+}
+.enviar:hover{ 
+	background:url(images/enviar_hover.png);;
+	position:fixed;
+	right:5px;
+	bottom:10px;
+	cursor:pointer;
+	width:200px;
+	height:185px;
+}
+
+
+.fondo_cajas{ background:url(images/fondo_cajas.png);}
+
+/*LEFT 1*/
+.lbl_nombre{width:150px; height:82px; position:absolute;
+			top:250px; left:5px;}
+.box_nombre{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:270px; left:155px;}
+			
+.lbl_fecha{width:150px; height:73px; position:absolute;
+			top:335px; left:5px;}
+.box_fecha{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:355px; left:155px;}
+
+.lbl_noinvitadas{width:150px; height:68px; position:absolute;
+			top:430px; left:5px;}
+.box_noinvitadas{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:440px; left:155px;}
+
+.lbl_tel{width:150px; height:79px; position:absolute;
+			top:500px; left:5px;}
+.box_tel{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:520px; left:155px;}
+
+.lbl_cel{width:150px; height:61px; position:absolute;
+			top:585px; left:5px;}
+.box_cel{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:600px; left:155px;}
+
+.lbl_email{width:150px; height:79px; position:absolute;
+			top:650px; left:5px;}
+.box_email{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:660px; left:155px;}
+			
+/*RIGHT 1*/
+.lbl_ciudad{width:150px; height:82px; position:absolute;
+			top:250px; right:270px;}
+.box_ciudad{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:275px; right:5px;}
+			
+.lbl_colonia{width:150px; height:63px; position:absolute;
+			top:335px; right:270px;}
+.box_colonia{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:355px; right:5px;}
+
+.lbl_organizadora{width:150px; height:58px; position:absolute;
+			top:430px; right:270px;}
+.box_organizadora{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:440px; right:5px;}
+
+.lbl_presupuesto{width:150px; height:55px; position:absolute;
+			top:500px; right:270px;}
+.box_presupuesto{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:500px; right:5px;}
+
+.lbl_horario{width:150px; height:51px; position:absolute;
+			top:575px; right:270px;}
+.box_horario{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:585px; right:5px;}
+
+.lbl_duracion{width:150px; height:44px; position:absolute;
+			top:650px; right:270px;}
+.box_duracion{background:url(images/fondo_cajas.png) repeat-x; width:250px; height:35px; position:absolute;
+			top:660px; right:5px;}
+
+/*LEFT 2*/
+.lbl_animacion{width:150px; height:35px; position:absolute;
+			top:980px; left:55px;}
+.box_animacion{width:100px; height:35px; position:absolute;
+			top:980px; left:205px;}
+			
+.lbl_gio{width:150px; height:50px; position:absolute;
+			top:1035px; left:35px;}
+.box_gio{width:100px; height:35px; position:absolute;
+			top:1035px; left:205px;}
+			
+.lbl_stripper{width:150px; height:80px; position:absolute;
+			top:1105px; left:35px;}
+.box_stripper{width:100px; height:35px; position:absolute;
+			top:1115px; left:205px;}
+			
+.lbl_clases{width:150px; height:111px; position:absolute;
+			top:1210px; left:55px;}
+.box_clases{width:100px; height:35px; position:absolute;
+			top:1225px; left:205px;}
+
+.lbl_sexologia{width:150px; height:98px; position:absolute;
+			top:1315px; left:55px;}
+.box_sexologia{width:100px; height:35px; position:absolute;
+			top:1325px; left:205px;}
+
+
+/*RIGHT 2*/
+.lbl_vip01{width:150px; height:47px; position:absolute;
+			top:980px; right:270px;}
+.box_vip01{width:100px; height:35px; position:absolute;
+			top:985px; right:160px;}
+			
+.lbl_vip02{width:150px; height:58px; position:absolute;
+			top:1035px; right:270px;}
+.box_vip02{width:100px; height:35px; position:absolute;
+			top:1050px; right:160px;}
+
+.lbl_vip03{width:150px; height:63px; position:absolute;
+			top:1105px; right:270px;}
+.box_vip03{width:100px; height:35px; position:absolute;
+			top:1115px; right:160px;}
+
+.lbl_burlesque{width:150px; height:44px; position:absolute;
+			top:1180px; right:270px;}
+.box_burlesque{width:100px; height:35px; position:absolute;
+			top:1185px; right:160px;}
+
+.lbl_tarot{width:150px; height:50px; position:absolute;
+			top:1230px; right:270px;}
+.box_tarot{width:100px; height:35px; position:absolute;
+			top:1235px; right:160px;}
+
+.lbl_fiestatematica{width:150px; height:31px; position:absolute;
+			top:1295px; right:270px;}
+.box_fiestatematica{width:100px; height:35px; position:absolute;
+			top:1295px; right:160px;}
+
+.lbl_seduccion{width:150px; height:79px; position:absolute;
+			top:1325px; right:270px;}
+.box_seduccion{width:100px; height:35px; position:absolute;
+			top:1345px; right:160px;}
+			
+/*LEFT 3*/
+.lbl_velo{width:150px; height:70px; position:absolute;
+			top:1640px; left:55px;}
+.box_velo{width:100px; height:35px; position:absolute;
+			top:1650px; left:205px;}
+
+.lbl_kitfiesta{width:150px; height:43px; position:absolute;
+			top:1710px; left:55px;}
+.box_kitfiesta{width:100px; height:35px; position:absolute;
+			top:1715px; left:205px;}
+
+.lbl_pastel{width:150px; height:64px; position:absolute;
+			top:1765px; left:55px;}
+.box_pastel{width:100px; height:35px; position:absolute;
+			top:1775px; left:205px;}
+			
+.lbl_bocadillos{width:150px; height:64px; position:absolute;
+			top:1820px; left:55px;}
+.box_bocadillos{width:100px; height:35px; position:absolute;
+			top:1830px; left:205px;}
+
+.lbl_camisetas{width:150px; height:50px; position:absolute;
+			top:1890px; left:55px;}
+.box_camisetas{width:100px; height:35px; position:absolute;
+			top:1895px; left:205px;}
+
+.lbl_distintivos{width:150px; height:44px; position:absolute;
+			top:1940px; left:55px;}
+.box_distintivos{width:100px; height:35px; position:absolute;
+			top:1945px; left:205px;}
+			
+.lbl_inv_impresas{width:150px; height:89px; position:absolute;
+			top:1990px; left:55px;}
+.box_inv_impresas{width:100px; height:35px; position:absolute;
+			top:2000px; left:205px;}
+			
+			
+/*RIGHT 3*/
+
+.lbl_inv_virtuales{width:150px; height:77px; position:absolute;
+			top:1640px; right:270px;}
+.box_inv_virtuales{width:100px; height:35px; position:absolute;
+			top:1650px; right:160px;}
+			
+.lbl_decoracion{width:150px; height:42px; position:absolute;
+			top:1710px; right:270px;}
+.box_decoracion{width:100px; height:35px; position:absolute;
+			top:1715px; right:160px;}
+
+.lbl_decoracion_tema{width:150px; height:88px; position:absolute;
+			top:1765px; right:270px;}
+.box_decoracion_tema{width:100px; height:35px; position:absolute;
+			top:1785px; right:160px;}
+
+.lbl_globos{width:150px; height:72px; position:absolute;
+			top:1850px; right:270px;}
+.box_globos{width:100px; height:35px; position:absolute;
+			top:1870px; right:160px;}
+
+.lbl_recuerdos{width:150px; height:42px; position:absolute;
+			top:1940px; right:270px;}
+.box_recuerdos{width:100px; height:35px; position:absolute;
+			top:1945px; right:160px;}
+			
+.lbl_disfraces{width:150px; height:54px; position:absolute;
+			top:2000px; right:270px;}
+.box_disfraces{width:100px; height:35px; position:absolute;
+			top:2005px; right:160px;}
+/*LEFT 4*/
+.lbl_mesapostres{width:150px; height:91px; position:absolute;
+			top:2300px; left:55px;}
+.box_mesapostres{width:100px; height:35px; position:absolute;
+			top:2320px; left:205px;}
+			
+.lbl_barradulces{width:150px; height:35px; position:absolute;
+			top:2400px; left:55px;}
+.box_barradulces{width:100px; height:35px; position:absolute;
+			top:2405px; left:205px;}
+
+.lbl_barracafe{width:150px; height:53px; position:absolute;
+			top:2465px; left:55px;}
+.box_barracafe{width:100px; height:35px; position:absolute;
+			top:2470px; left:205px;}
+
+.lbl_galletasdeco{width:150px; height:91px; position:absolute;
+			top:2520px; left:55px;}
+.box_galletasdeco{width:100px; height:35px; position:absolute;
+			top:2540px; left:205px;}
+
+.lbl_paletasbombon{width:150px; height:69px; position:absolute;
+			top:2620px; left:55px;}
+.box_paletasbombon{width:100px; height:35px; position:absolute;
+			top:2635px; left:205px;}
+
+.lbl_cupcakes{width:150px; height:75px; position:absolute;
+			top:2700px; left:55px;}
+.box_cupcakes{width:100px; height:35px; position:absolute;
+			top:2705px; left:205px;}
+
+.lbl_botellasagua{width:150px; height:84px; position:absolute;
+			top:2780px; left:55px;}
+.box_botellasagua{width:100px; height:35px; position:absolute;
+			top:2785px; left:205px;}
+
+/*RIGHT 4*/
+
+.lbl_canapes{width:150px; height:76px; position:absolute;
+			top:2300px; right:270px;}
+.box_canapes{width:100px; height:35px; position:absolute;
+			top:2310px; right:160px;}
+
+.lbl_pizzas{width:150px; height:113px; position:absolute;
+			top:2360px; right:270px;}
+.box_pizzas{width:100px; height:35px; position:absolute;
+			top:2385px; right:160px;}
+
+.lbl_bocadillosero{width:150px; height:100px; position:absolute;
+			top:2470px; right:270px;}
+.box_bocadillosero{width:100px; height:35px; position:absolute;
+			top:2485px; right:160px;}
+
+.lbl_galletasero{width:150px; height:104px; position:absolute;
+			top:2570px; right:270px;}
+.box_galletasero{width:100px; height:35px; position:absolute;
+			top:2590px; right:160px;}
+
+.lbl_pastelesero{width:150px; height:103px; position:absolute;
+			top:2670px; right:270px;}
+.box_pastelesero{width:100px; height:35px; position:absolute;
+			top:2695px; right:160px;}
+
+.lbl_canapesero{width:150px; height:103px; position:absolute;
+			top:2770px; right:270px;}
+.box_canapesero{width:100px; height:35px; position:absolute;
+			top:2790px; right:160px;}
+
+/*LEFT 5*/
+.lbl_juadultos{width:150px; height:85px; position:absolute;
+			top:3100px; left:55px;}
+.box_juadultos{width:100px; height:35px; position:absolute;
+			top:3115px; left:205px;}
+
+.lbl_bisuteria{width:150px; height:92px; position:absolute;
+			top:3180px; left:55px;}
+.box_bisuteria{width:100px; height:35px; position:absolute;
+			top:3200px; left:205px;}
+
+.lbl_bolsas{width:150px; height:86px; position:absolute;
+			top:3270px; left:55px;}
+.box_bolsas{width:100px; height:35px; position:absolute;
+			top:3290px; left:205px;}
+
+.lbl_zapatos{width:150px; height:107px; position:absolute;
+			top:3360px; left:55px;}
+.box_zapatos{width:100px; height:35px; position:absolute;
+			top:3380px; left:205px;}
+
+.lbl_lenceria{width:150px; height:89px; position:absolute;
+			top:3100px; right:270px;}
+.box_lenceria{width:100px; height:35px; position:absolute;
+			top:3115px; right:160px;}
+			
+.lbl_todoenuno{width:150px; height:82px; position:absolute;
+			top:3200px; right:270px;}
+.box_todoenuno{width:100px; height:35px; position:absolute;
+			top:3210px; right:160px;}
+			
+.btn_enviar{width:100px; height:35px; position:absolute;
+			top:3210px; right:0px;}
